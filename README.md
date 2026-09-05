@@ -1,10 +1,10 @@
-# 🔖 Linkding — Self-Hosted Bookmark Manager on Kubernetes
+# Linkding — Self-Hosted Bookmark Manager on Kubernetes
 
 A production-style deployment of [Linkding](https://github.com/sissbruecker/linkding) on a self-hosted K3s Kubernetes cluster, managed with Terraform and automated via a secure CI/CD pipeline using GitHub Actions and Tailscale VPN.
 
 ---
 
-## 📐 Architecture
+## Architecture
 
 ```
 ┌─────────────────────────────────────────────────────┐
@@ -24,7 +24,7 @@ A production-style deployment of [Linkding](https://github.com/sissbruecker/link
 
 ---
 
-## 🛠️ Stack
+## Stack
 
 | Layer                  | Tool             | Purpose                                    |
 | ---------------------- | ---------------- | ------------------------------------------ |
@@ -37,7 +37,7 @@ A production-style deployment of [Linkding](https://github.com/sissbruecker/link
 
 ---
 
-## 🔒 Security
+## Security
 
 - **Trivy** scans the Linkding Docker image for known CVEs on every pipeline run
 - **Tailscale OAuth** provides secure, ephemeral access from GitHub Actions to the private homelab cluster — no open ports exposed to the internet
@@ -46,7 +46,7 @@ A production-style deployment of [Linkding](https://github.com/sissbruecker/link
 
 ---
 
-## 🚀 CI/CD Pipeline
+## CI/CD Pipeline
 
 Every push to `main` triggers the following pipeline:
 
@@ -62,7 +62,7 @@ Every push to `main` triggers the following pipeline:
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 linkding/
@@ -80,7 +80,7 @@ linkding/
 
 ---
 
-## ⚙️ Deployment
+## Deployment
 
 ### Prerequisites
 
@@ -107,7 +107,7 @@ Push to `main` branch — GitHub Actions handles the rest.
 
 ---
 
-## 🔑 Required GitHub Secrets
+## Required GitHub Secrets
 
 | Secret               | Description                               |
 | -------------------- | ----------------------------------------- |
@@ -117,7 +117,7 @@ Push to `main` branch — GitHub Actions handles the rest.
 
 ---
 
-## 📊 Access
+## Access
 
 | Service     | Port     |
 | ----------- | -------- |
@@ -125,7 +125,7 @@ Push to `main` branch — GitHub Actions handles the rest.
 
 ---
 
-## 💡 Key Learnings
+## Key Learnings
 
 - Deployed a containerised application to a self-hosted Kubernetes cluster
 - Managed Kubernetes infrastructure declaratively with Terraform
